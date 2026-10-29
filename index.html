@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ar-len — натяжные потолки: расчёт цены онлайн, договор с фиксированной ценой</title>
+<meta name="description" content="Натяжные потолки любой сложности: ПВХ, тканевые, фотопечать, парящие и двухуровневые. Цена от 1 150 ₽/м², калькулятор на сайте, углы в подарок.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo" aria-label="Ar-len — на главную">Ar<i></i>len<span>натяжные потолки</span></a>
+    <nav class="nav" id="nav">
+      <a href="#calc">Калькулятор</a>
+      <a href="#prices">Цены</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Как работаем</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79001234567" class="header__phone">+7 (900) 123-45-67</a>
+      <a href="#contact" class="btn btn--primary">Вызвать замерщика</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO + КАЛЬКУЛЯТОР -->
+<section class="hero" id="top">
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <h1>Потолок, цену которого вы знаете до звонка</h1>
+      <p class="hero__lead">Ar-len делает натяжные потолки любой сложности: от матового ПВХ до тканевых, парящих и двухуровневых. Прикиньте стоимость в калькуляторе, а точную цену мастер зафиксирует в договоре.</p>
+      <div class="hero__cta">
+        <a href="#calc" class="btn btn--primary btn--lg">Рассчитать стоимость</a>
+        <a href="#prices" class="btn btn--ghost btn--lg">Весь прайс</a>
+      </div>
+      <ul class="facts">
+        <li><b>от 1 150 ₽</b><span>за м² полотна</span></li>
+        <li><b>16 000 ₽</b><span>минимальный заказ</span></li>
+        <li><b>углы</b><span>в подарок</span></li>
+      </ul>
+    </div>
+
+    <div class="calc" id="calc">
+      <h2 class="calc__title">Калькулятор потолка</h2>
+      <form class="calc__form" id="calcForm" novalidate>
+        <label class="field">
+          <span>Площадь, м²</span>
+          <input type="number" id="cArea" min="1" max="500" step="0.5" value="18" inputmode="decimal">
+        </label>
+        <label class="field">
+          <span>Полотно</span>
+          <select id="cMat">
+            <option value="msd">ПВХ MSD Premium</option>
+            <option value="bauf" selected>ПВХ Bauf 205</option>
+            <option value="color">ПВХ цветное</option>
+            <option value="teqtum">ПВХ TEQTUM (Германия)</option>
+            <option value="descor">Ткань Descor (Германия)</option>
+            <option value="clipso">Ткань Clipso (Франция)</option>
+          </select>
+        </label>
+        <div class="calc__row">
+          <label class="field">
+            <span>Точечные светильники, шт</span>
+            <input type="number" id="cSpots" min="0" max="100" value="6" inputmode="numeric">
+          </label>
+          <label class="field">
+            <span>Люстры, шт</span>
+            <input type="number" id="cChand" min="0" max="20" value="1" inputmode="numeric">
+          </label>
+        </div>
+        <div class="calc__row">
+          <label class="field">
+            <span>Парящий профиль, м</span>
+            <input type="number" id="cFloat" min="0" max="200" step="0.5" value="0" inputmode="decimal">
+          </label>
+          <label class="field">
+            <span>Двухуровневый, м</span>
+            <input type="number" id="cTwo" min="0" max="200" step="0.5" value="0" inputmode="decimal">
+          </label>
+        </div>
+      </form>
+      <div class="calc__result" aria-live="polite">
+        <div>
+          <span class="calc__label">Ориентировочно</span>
+          <strong id="cTotal">0 ₽</strong>
+        </div>
+        <p id="cNote" class="calc__note"></p>
+      </div>
+      <a href="#contact" class="btn btn--primary btn--block" id="cSend">Отправить расчёт мастеру</a>
+    </div>
+  </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="section" id="advantages">
+  <div class="container">
+    <h2 class="section__title">Почему с нами спокойно</h2>
+    <div class="adv-grid">
+      <article class="adv">
+        <div class="adv__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Фиксированная цена</h3>
+        <p>Сумма прописана в договоре. Что посчитали при замере, то и платите, без доплат по ходу работ.</p>
+      </article>
+      <article class="adv">
+        <div class="adv__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 20V8l9-5 9 5v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>Полотна от европейских производителей</h3>
+        <p>Германия, Франция, Швейцария. Есть влагостойкие, шумоизолирующие и пожаробезопасные варианты.</p>
+      </article>
+      <article class="adv">
+        <div class="adv__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Свет под ключ</h3>
+        <p>Монтаж светильников, люстр и подсветки с подключением. Парящие потолки и ленту делаем сами.</p>
+      </article>
+      <article class="adv">
+        <div class="adv__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 18l5-6 4 4 7-9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Любая сложность</h3>
+        <p>Криволинейные формы, тени, бесщелевые профили, ниши под шторы, закладные для шкафа-купе.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section section--tint" id="services">
+  <div class="container">
+    <h2 class="section__title">Что делаем</h2>
+    <p class="section__lead">Всё, что связано с натяжными потолками. Цены указаны за работу вместе с материалом, итог зависит от замера.</p>
+    <div class="srv-grid">
+      <article class="srv">
+        <h3>ПВХ-потолки</h3>
+        <p>Матовые, сатиновые, глянцевые и цветные. Самый ходовой вариант для квартир и офисов.</p>
+        <p class="srv__price">от 1 150 ₽/м²</p>
+      </article>
+      <article class="srv">
+        <h3>Тканевые потолки</h3>
+        <p>Без швов, дышат, не боятся мороза. Descor, Clipso, Cerutti, Junkers &amp; Müllers.</p>
+        <p class="srv__price">от 1 900 ₽/м²</p>
+      </article>
+      <article class="srv">
+        <h3>Фотопечать</h3>
+        <p>Небо, узоры, ваше изображение. Матовое и глянцевое полотно, печать на ткани.</p>
+        <p class="srv__price">от 1 900 ₽/м²</p>
+      </article>
+      <article class="srv">
+        <h3>Двухуровневые</h3>
+        <p>Конструкции со светодиодной лентой и без, криволинейные переходы, спайка полотен.</p>
+        <p class="srv__price">от 2 500 ₽/м.п.</p>
+      </article>
+      <article class="srv">
+        <h3>Парящие и теневые</h3>
+        <p>Парящий профиль с лентой, теневой Kraab 2.0, бесщелевой ШТОК. Потолок как будто висит в воздухе.</p>
+        <p class="srv__price">от 1 700 ₽/м²</p>
+      </article>
+      <article class="srv">
+        <h3>Гардины и закладные</h3>
+        <p>Стеновые, потолочные и скрытые гардины под шторы, закладная для шкафа-купе.</p>
+        <p class="srv__price">от 1 000 ₽/шт</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ПРАЙС -->
+<section class="section" id="prices">
+  <div class="container">
+    <h2 class="section__title">Прайс</h2>
+    <p class="section__lead">Минимальная сумма заказа 16 000 ₽. Угол 200 ₽ в подарок, свыше 6 углов по 150 ₽.</p>
+
+    <div class="price-cols">
+      <div class="price-box">
+        <h3>Полотна</h3>
+        <table class="price">
+          <thead><tr><th>Материал</th><th>до 20 м²</th><th>от 20 м²</th></tr></thead>
+          <tbody>
+            <tr><td>ПВХ MSD Premium</td><td>1 150 ₽</td><td>1 100 ₽</td></tr>
+            <tr><td>ПВХ цветное</td><td>1 300 ₽</td><td>1 200 ₽</td></tr>
+            <tr><td>ПВХ Bauf 205</td><td>1 450 ₽</td><td>1 400 ₽</td></tr>
+            <tr><td>ПВХ TEQTUM, Германия</td><td>2 100 ₽</td><td>2 000 ₽</td></tr>
+            <tr><td>Tension Wood, под дерево и кожу</td><td>1 800 ₽</td><td>1 700 ₽</td></tr>
+            <tr><td>Ткань Descor, Германия</td><td>2 000 ₽</td><td>1 900 ₽</td></tr>
+            <tr><td>Ткань Clipso, Франция</td><td colspan="2">3 000 ₽</td></tr>
+            <tr><td>Junkers &amp; Müllers, влагостойкая</td><td colspan="2">3 600 ₽</td></tr>
+            <tr><td>Junkers &amp; Müllers, шумоизоляция</td><td colspan="2">4 100 ₽</td></tr>
+            <tr><td>Junkers &amp; Müllers ЭКО, КМ1</td><td colspan="2">4 500 ₽</td></tr>
+            <tr><td>Фотопечать, матовое, от 3,2 м</td><td colspan="2">1 900 ₽ + 1 000 ₽</td></tr>
+            <tr><td>Фотопечать, глянцевое, от 3,2 м</td><td colspan="2">2 100 ₽ + 1 000 ₽</td></tr>
+          </tbody>
+        </table>
+        <p class="price__note">Цены за м². Ткань Descor с блёстками 3 800 ₽/м².</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Свет и монтаж</h3>
+        <table class="price">
+          <thead><tr><th>Работа</th><th>Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Точечный светильник</td><td>750 ₽, от 15 шт 700 ₽</td></tr>
+            <tr><td>Люстра</td><td>900 ₽, от 10 шт 800 ₽</td></tr>
+            <tr><td>Установка люстры без сборки</td><td>2 500 ₽</td></tr>
+            <tr><td>Парящий потолок с лентой, м.п.</td><td>2 000 ₽</td></tr>
+            <tr><td>Лента цветная, 5 м.п.</td><td>4 000 ₽</td></tr>
+            <tr><td>Лента белая, 5 м.п.</td><td>2 800 ₽</td></tr>
+            <tr><td>Блок питания на 10 м.п.</td><td>2 500 ₽</td></tr>
+            <tr><td>Контроллер цветной ленты</td><td>4 000 ₽</td></tr>
+            <tr><td>Двухуровневая конструкция, м.п.</td><td>2 500 ₽, с лентой 2 700 ₽</td></tr>
+            <tr><td>Криволинейный участок, м.п.</td><td>+600 ₽</td></tr>
+            <tr><td>Теневой профиль Kraab 2.0</td><td>1 700 ₽/м²</td></tr>
+            <tr><td>Бесщелевой ШТОК, м.п.</td><td>2 500 ₽</td></tr>
+            <tr><td>Вытяжка (вентилятор)</td><td>1 500 ₽</td></tr>
+            <tr><td>Диффузор, труба</td><td>500 ₽</td></tr>
+            <tr><td>Установка в нише, м.п.</td><td>500 ₽</td></tr>
+            <tr><td>Сверление плитки, керамика / керамогранит, м.п.</td><td>300 ₽ / 800 ₽</td></tr>
+          </tbody>
+        </table>
+        <p class="price__note">Гардины: стеновая 1 000 ₽, потолочная 2 500 ₽, скрытая БП-40 1 700 ₽/м.п., закладная для шкафа-купе 1 700 ₽.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="section section--tint" id="process">
+  <div class="container">
+    <h2 class="section__title">Как проходит работа</h2>
+    <ol class="steps">
+      <li class="step"><h3>Заявка</h3><p>Оставляете номер или присылаете расчёт из калькулятора. Перезваниваем и договариваемся о времени.</p></li>
+      <li class="step"><h3>Замер</h3><p>Мастер приезжает, снимает размеры, помогает выбрать полотно и свет.</p></li>
+      <li class="step"><h3>Договор</h3><p>Фиксируем цену, материалы и сроки. Дальше ничего не меняется.</p></li>
+      <li class="step"><h3>Монтаж</h3><p>Привозим полотно, ставим профиль, светильники и подсветку. После себя убираем.</p></li>
+      <li class="step"><h3>Приёмка</h3><p>Вы проверяете результат вместе с мастером и подписываете акт.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- КОМУ ПОДХОДИТ -->
+<section class="section" id="cases">
+  <div class="container">
+    <h2 class="section__title">Решения под разные задачи</h2>
+    <div class="case-grid">
+      <article class="case">
+        <h3>Квартира в новостройке</h3>
+        <p>Ровный матовый ПВХ, скрытый профиль и точечный свет. Быстро и недорого.</p>
+      </article>
+      <article class="case">
+        <h3>Ванная и кухня</h3>
+        <p>Влагостойкие полотна, вытяжка и светильники с учётом плитки и ниш.</p>
+      </article>
+      <article class="case">
+        <h3>Гостиная и спальня</h3>
+        <p>Парящий потолок с тёплой лентой, тканевое полотно без швов или фотопечать.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--tint" id="faq">
+  <div class="container container--narrow">
+    <h2 class="section__title">Частые вопросы</h2>
+    <details class="faq__item"><summary>Сколько стоит потолок на 18 м²?</summary><p>Матовый ПВХ Bauf 205 с шестью светильниками и люстрой выходит около 31 500 ₽. Точную сумму посчитает калькулятор выше, а в договор мастер впишет окончательную цену после замера.</p></details>
+    <details class="faq__item"><summary>Есть ли минимальная сумма заказа?</summary><p>Да, 16 000 ₽. Если потолок выходит дешевле, можно добавить свет или подсветку, чтобы дойти до минимума с пользой.</p></details>
+    <details class="faq__item"><summary>Чем ткань отличается от ПВХ?</summary><p>Ткань делается без швов, пропускает воздух и переносит низкие температуры, поэтому подходит для дач и больших комнат. ПВХ дешевле и лучше держит влагу.</p></details>
+    <details class="faq__item"><summary>Что такое парящий потолок?</summary><p>Профиль с подсветкой по периметру. Из-за светящейся линии потолок кажется приподнятым над стенами. Стоит 2 000 ₽ за метр погонный с установкой и подключением ленты.</p></details>
+    <details class="faq__item"><summary>Сверлите ли вы плитку под светильники и вытяжку?</summary><p>Да. Плитка из керамики стоит 300 ₽ за метр погонный, керамогранит 800 ₽.</p></details>
+    <details class="faq__item"><summary>Можно ли сделать потолок с вашим рисунком?</summary><p>Да, это фотопечать. Матовое полотно от 1 900 ₽/м², глянцевое от 2 100 ₽/м², плюс 1 000 ₽ за печать при ширине от 3,2 м.</p></details>
+  </div>
+</section>
+
+<!-- ФОРМА + КАРТА -->
+<section class="section" id="contact">
+  <div class="container contact__inner">
+    <div class="contact__form">
+      <h2 class="section__title">Вызвать замерщика</h2>
+      <p class="section__lead">Оставьте номер, перезвоним и согласуем удобное время.</p>
+      <form id="leadForm" class="form" novalidate>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <label class="field"><span>Имя</span><input type="text" name="name" required autocomplete="name"></label>
+        <label class="field"><span>Телефон</span><input type="tel" name="phone" required autocomplete="tel" placeholder="+7"></label>
+        <label class="field"><span>Комментарий</span><textarea name="comment" rows="3" placeholder="Площадь, тип потолка, пожелания"></textarea></label>
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
+        <p class="form__hint">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+      </form>
+    </div>
+    <div class="contact__side">
+      <div class="map">
+        <iframe title="Карта" src="https://yandex.ru/map-widget/v1/?ll=37.617698%2C55.755864&z=10" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <ul class="contact__list">
+        <li><span>Телефон</span><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+        <li><span>Почта</span><a href="mailto:info@ar-len.ru">info@ar-len.ru</a></li>
+        <li><span>Адрес</span>Москва, ул. Примерная, 15</li>
+        <li><span>Часы работы</span>ежедневно, 9:00 до 21:00</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="logo logo--footer">Ar<i></i>len<span>натяжные потолки</span></a>
+    <p>© <span id="year"></span> Ar-len. Натяжные потолки.</p>
+    <a href="https://ar-len.ru" rel="noopener">ar-len.ru</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/79001234567" class="fab" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.3 18.8L4 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
