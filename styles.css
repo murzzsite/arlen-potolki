@@ -45,6 +45,7 @@ p { margin: 0; }
   font: 700 24px/1 var(--font-head); letter-spacing: -0.03em;
   display: inline-flex; align-items: baseline; gap: 0;
 }
+.logo img { height: 56px; width: auto; mix-blend-mode: multiply; }
 .logo i { display: inline-block; width: 12px; height: 3px; margin: 0 2px; background: var(--light); border-radius: 2px; transform: translateY(-5px); box-shadow: 0 0 10px var(--light); }
 .logo span { margin-left: 10px; font: 400 13px/1 var(--font-body); letter-spacing: 0; color: var(--muted); }
 .nav { display: flex; gap: 26px; margin-left: auto; }
@@ -183,7 +184,7 @@ p { margin: 0; }
 
 .footer { padding: 36px 0; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.logo--footer { font-size: 20px; color: var(--ink); }
+.logo--footer img { height: 48px; }
 
 .fab {
   position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 56px; height: 56px; border-radius: 50%;

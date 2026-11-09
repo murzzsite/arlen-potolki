@@ -41,12 +41,12 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/XTDUDL53MV'
 
   // ===== CALCULATOR =====
   const MATERIALS = {
-    msd:    { label: 'ПВХ MSD Premium',       low: 1150, high: 1100 },
+    msd:    { label: 'ПВХ MSD Premium',       low: 1350, high: 1300 },
     bauf:   { label: 'ПВХ Bauf 205',          low: 1450, high: 1400 },
-    color:  { label: 'ПВХ цветное',           low: 1300, high: 1200 },
+    color:  { label: 'ПВХ цветное',           low: 1400, high: 1300 },
     teqtum: { label: 'ПВХ TEQTUM',            low: 2100, high: 2000 },
-    descor: { label: 'Ткань Descor',          low: 2000, high: 1900 },
-    clipso: { label: 'Ткань Clipso',          low: 3000, high: 3000 },
+    descor: { label: 'Ткань Descor',          low: 2100, high: 2000 },
+    clipso: { label: 'Ткань Clipso',          low: 3500, high: 3500 },
   };
   const MIN_ORDER = 16000;
   const el = id => document.getElementById(id);
@@ -62,7 +62,7 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/XTDUDL53MV'
     const twoM = num('cTwo');
 
     const canvas = area * (area > 20 ? mat.high : mat.low);
-    const spotsSum = spots * (spots >= 15 ? 700 : 750);
+    const spotsSum = spots * (spots >= 15 ? 700 : 800);
     const chandSum = chand * (chand >= 10 ? 800 : 900);
     const raw = canvas + spotsSum + chandSum + floatM * 2000 + twoM * 2500;
     const total = raw > 0 ? Math.max(raw, MIN_ORDER) : 0;
