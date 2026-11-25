@@ -102,6 +102,12 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/XTDUDL53MV'
       return;
     }
 
+    if (!form.querySelector('[name="consent"]')?.checked) {
+      alert('Поставьте галочку согласия на обработку персональных данных');
+      return;
+    }
+
+    delete payload.consent;
     btn.disabled = true;
     btn.textContent = 'Отправляем...';
     try {

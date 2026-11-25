@@ -175,6 +175,9 @@ p { margin: 0; }
 #contact { scroll-margin-top: 72px; }
 .form { margin-top: 28px; display: grid; gap: 14px; }
 .form__hint { font-size: 13px; color: var(--muted); }
+.agree { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.45; color: var(--muted); cursor: pointer; }
+.agree input { flex: 0 0 auto; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--light-deep); }
+.agree a { color: var(--ink); text-decoration: underline; }
 .map { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 10; background: var(--tint); }
 .map iframe { width: 100%; height: 100%; border: 0; }
 .contact__list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }

@@ -3,8 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ArLen — натяжные потолки: расчёт цены онлайн, договор с фиксированной ценой</title>
-<meta name="description" content="Натяжные потолки любой сложности: ПВХ, тканевые, фотопечать, парящие и двухуровневые. Цена от 1 300 ₽/м², калькулятор на сайте, углы в подарок.">
+<title>ArLen: натяжные потолки в Москве, расчёт цены онлайн</title>
+<meta name="description" content="Натяжные потолки в Москве: ПВХ, тканевые, парящие, фотопечать. Цена от 1 300 ₽/м², калькулятор на сайте, цена фиксируется в договоре.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://murzzsite.github.io/arlen-potolki/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="ArLen">
+<meta property="og:title" content="ArLen: натяжные потолки в Москве, расчёт цены онлайн">
+<meta property="og:description" content="Натяжные потолки в Москве: ПВХ, тканевые, парящие, фотопечать. Цена от 1 300 ₽/м², калькулятор на сайте, цена фиксируется в договоре.">
+<meta property="og:url" content="https://murzzsite.github.io/arlen-potolki/">
+<meta property="og:image" content="https://murzzsite.github.io/arlen-potolki/img/logo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ArLen: натяжные потолки в Москве, расчёт цены онлайн">
+<meta name="twitter:description" content="Натяжные потолки в Москве: ПВХ, тканевые, парящие, фотопечать. Цена от 1 300 ₽/м², калькулятор на сайте, цена фиксируется в договоре.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://murzzsite.github.io/arlen-potolki/#website","url":"https://murzzsite.github.io/arlen-potolki/","name":"ArLen","inLanguage":"ru-RU"},{"@type":"HomeAndConstructionBusiness","@id":"https://murzzsite.github.io/arlen-potolki/#business","name":"ArLen","description":"Натяжные потолки любой сложности: ПВХ, тканевые, фотопечать, парящие и двухуровневые.","url":"https://murzzsite.github.io/arlen-potolki/","logo":"https://murzzsite.github.io/arlen-potolki/img/logo.jpg","image":"https://murzzsite.github.io/arlen-potolki/img/logo.jpg","telephone":"+7 925 232-35-41","email":"arlen1820@yandex.ru","address":{"@type":"PostalAddress","streetAddress":"ул. Привольная, д. 2к5","addressLocality":"Москва","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.703352,"longitude":37.839785},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"19:00"}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
@@ -290,8 +303,8 @@
         <label class="field"><span>Имя</span><input type="text" name="name" required autocomplete="name"></label>
         <label class="field"><span>Телефон</span><input type="tel" name="phone" required autocomplete="tel" placeholder="+7"></label>
         <label class="field"><span>Комментарий</span><textarea name="comment" rows="3" placeholder="Площадь, тип потолка, пожелания"></textarea></label>
+        <label class="agree"><input type="checkbox" name="consent" id="consent" required><span>Я согласен(на) на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
         <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
-        <p class="form__hint">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
       </form>
     </div>
     <div class="contact__side">
@@ -314,6 +327,7 @@
   <div class="container footer__inner">
     <a href="#top" class="logo logo--footer"><img src="img/logo.jpg" alt="ArLen — натяжные потолки"></a>
     <p>© <span id="year"></span> ArLen. Натяжные потолки.</p>
+    <a href="privacy.html">Политика конфиденциальности</a>
     <a href="https://ar-len.ru" rel="noopener">ar-len.ru</a>
   </div>
 </footer>
@@ -323,5 +337,6 @@
 </a>
 
 <script src="script.js"></script>
+<script src="cookie.js" defer></script>
 </body>
 </html>
